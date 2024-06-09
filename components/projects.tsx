@@ -8,8 +8,8 @@ export function Projects(){
         <div className="mx-auto  md:w-3/4  w-full my-10">
             <h2 className=" font-semibold text-3xl text-[#2D2E32] md:mx-5 mx-auto">My projects</h2>
             <div className="grid lg:grid-cols-2  grid-cols-1 gap-4 ">
-                    {projects.map((project) => (
-                        <CardContainer className="inter-varflex col-span-2  w-full min-w-[25rem]">
+                    {projects.map((project,index) => (
+                        <CardContainer key={index} className="inter-varflex col-span-2  w-full min-w-[25rem]">
                             <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1]ursor-pointer w-auto sm:w-[35rem] h-auto rounded-xl p-6 border cursor-pointer">
                                     <CardItem
                                         translateZ="20"

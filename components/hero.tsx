@@ -47,7 +47,7 @@ export function Hero(){
                         className="mySwiper"
                     >
                         <SwiperSlide>
-                            <Image className="h-full w-full object-cover" src = "https://buffer.com/library/content/images/size/w1200/2023/10/free-images.jpg" alt="dsadsads" width={200} height={200}/>
+                            <Image className="h-full w-full object-cover" src = "/hero.png" alt="dsadsads" width={200} height={200}/>
                         </SwiperSlide>
                         <SwiperSlide></SwiperSlide>
                         <SwiperSlide></SwiperSlide>
