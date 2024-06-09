@@ -21,13 +21,13 @@ export default function RootLayout({
     <html lang="en">
 
       <body className={cn('', inter.className)}>
-        <Nav />
-        <ThemeProvider
+      <ThemeProvider
               attribute="class"
               defaultTheme="system"
               enableSystem
               disableTransitionOnChange
         >
+        <Nav />
         {children}
         </ThemeProvider>
       </body>

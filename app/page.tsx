@@ -6,7 +6,7 @@ import { Projects } from "@/components/projects";
 
 export default function Home() {
   return (
-    <main className="">
+    <main className="" suppressHydrationWarning>
       <Hero />
       <AboutMe />
       <Projects />

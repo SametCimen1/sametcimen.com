@@ -1,10 +1,19 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     images: {
-        domains: [
-          "buffer.com",
-          "images.unsplash.com",
-          "skillicons.dev"
+        remotePatterns: [
+          {
+            protocol: 'https',
+            hostname: 'buffer.com',
+          },
+          {
+            protocol: 'https',
+            hostname: 'images.unsplash.com',
+          },
+          {
+            protocol: 'https',
+            hostname: 'skillicons.dev',
+          }
         ],
       },
 };

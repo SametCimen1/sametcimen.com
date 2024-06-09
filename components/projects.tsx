@@ -6,7 +6,7 @@ import { projects } from '@/data'
 export function Projects(){
     return(
         <div className="mx-auto  md:w-3/4  w-full my-10">
-            <h2 className=" font-semibold text-3xl text-[#2D2E32] md:mx-5 mx-auto">My projects</h2>
+            <h2 className=" font-semibold text-3xl text-[#2D2E32] dark:text-[#d1d1d1] md:mx-5 mx-auto">My projects</h2>
             <div className="grid lg:grid-cols-2  grid-cols-1 gap-4 ">
                     {projects.map((project,index) => (
                         <CardContainer key={index} className="inter-varflex col-span-2  w-full min-w-[25rem]">
