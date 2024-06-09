@@ -18,6 +18,10 @@ const config = {
       },
     },
     extend: {
+      backgroundImage: {
+        'react': "url('https://skillicons.dev/icons?i=react')",
+        'footer-texture': "url('/img/footer-texture.png')",
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

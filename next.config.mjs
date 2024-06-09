@@ -3,7 +3,8 @@ const nextConfig = {
     images: {
         domains: [
           "buffer.com",
-          "images.unsplash.com"
+          "images.unsplash.com",
+          "skillicons.dev"
         ],
       },
 };

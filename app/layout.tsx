@@ -20,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en">
 
-      <body className={cn('w-full md:w-3/4 mx-auto', inter.className)}>
+      <body className={cn('', inter.className)}>
         <Nav />
         <ThemeProvider
               attribute="class"

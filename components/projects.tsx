@@ -5,11 +5,12 @@ import { projects } from '@/data'
 
 export function Projects(){
     return(
-        <div className="mx-auto ">
-            <div className="flex flex-wrap items-center justify-center  p-4 gap-x-24 gap-y-8 mt-10">
+        <div className="mx-auto  md:w-3/4  w-full my-10">
+            <h2 className=" font-semibold text-3xl text-[#2D2E32] md:mx-5 mx-auto">My projects</h2>
+            <div className="grid lg:grid-cols-2  grid-cols-1 gap-4 ">
                     {projects.map((project) => (
-                        <CardContainer className="inter-varflex ">
-                            <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  cursor-pointer w-auto sm:w-[35rem] h-auto rounded-xl p-6 border ">
+                        <CardContainer className="inter-varflex col-span-2  w-full min-w-[25rem]">
+                            <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1]ursor-pointer w-auto sm:w-[35rem] h-auto rounded-xl p-6 border cursor-pointer">
                                     <CardItem
                                         translateZ="20"
                                         className="text-xl font-bold text-neutral-600 dark:text-white"
@@ -57,7 +58,7 @@ export function Projects(){
                         </CardContainer>
                     ))}
             </div>
-            <p>Check out my Github if you are interested in seeing more of my projects</p>
+            <a href = "https://github.com/sametcimen1" className="text-blue-700 hover:text-blue-500 underline md:mx-5 mx-auto">Check out my github</a>
         </div>
     )
 }

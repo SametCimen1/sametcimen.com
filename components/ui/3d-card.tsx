@@ -30,8 +30,8 @@ export const CardContainer = ({
     if (!containerRef.current) return;
     const { left, top, width, height } =
       containerRef.current.getBoundingClientRect();
-    const x = (e.clientX - left - width / 2) / 15;
-    const y = (e.clientY - top - height / 2) / 15;
+    const x = (e.clientX - left - width / 1.75) / 15;
+    const y = (e.clientY - top - height / 1.75) / 15;
     containerRef.current.style.transform = `rotateY(${x}deg) rotateX(${y}deg)`;
   };
 
@@ -49,7 +49,7 @@ export const CardContainer = ({
     <MouseEnterContext.Provider value={[isMouseEntered, setIsMouseEntered]}>
       <div
         className={cn(
-          "py-20 flex items-center justify-between",
+          "mt-5 md:mx-5 mx-auto flex items-center justify-between",
           containerClassName
         )}
         style={{
