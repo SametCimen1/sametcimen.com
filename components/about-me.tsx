@@ -33,9 +33,9 @@ export function AboutMe(){
 
   console.log(`current ${current}`)
   const urls = [
-    'https://sametcimen.com/rutgers.jpg',
-    'https://sametcimen.com/programming.jpg',
-    'https://sametcimen.com/coding.jpg'
+    'https://sametcimen.com/rutgers.webp',
+    'https://sametcimen.com/programming.webp',
+    'https://sametcimen.com/coding.webp'
   ]
 
 //   <CarouselContent>
