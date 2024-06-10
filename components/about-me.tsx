@@ -33,9 +33,9 @@ export function AboutMe(){
 
   console.log(`current ${current}`)
   const urls = [
-    'http://localhost:3000/rutgers.jpg',
-    'http://localhost:3000/programming.jpg',
-    'http://localhost:3000/coding.jpg'
+    'https://sametcimen.com/rutgers.jpg',
+    'https://sametcimen.com/programming.jpg',
+    'https://sametcimen.com/coding.jpg'
   ]
 
 //   <CarouselContent>
