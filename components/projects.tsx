@@ -10,8 +10,8 @@ export function Projects(){
             <div className="grid lg:grid-cols-2  grid-cols-1 gap-4 ">
 
                     {projects.map((project,index) => (
-                        <a href={project.link}>
-                            <CardContainer key={index} className="inter-varflex col-span-2  w-full min-w-[25rem] ml-3 md:ml-3">
+                        <a href={project.link} key={index} >
+                            <CardContainer className="inter-varflex col-span-2  w-full min-w-[25rem] ml-3 md:ml-3">
                                 <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1]ursor-pointer w-auto sm:w-[35rem] h-auto rounded-xl p-6 border cursor-pointer">
                                         <CardItem
                                             translateZ="20"
