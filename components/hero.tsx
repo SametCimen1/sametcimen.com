@@ -53,10 +53,18 @@ export function Hero(){
                         modules={[EffectCards]}
                         className="mySwiper "
                     >
-                        <SwiperSlide></SwiperSlide>
-                        <SwiperSlide></SwiperSlide>
-                        <SwiperSlide></SwiperSlide>
-                        <SwiperSlide></SwiperSlide>
+                        <SwiperSlide>
+                            <Image  src = "/hero.webp" alt = "Image of me" width={500} height={500} className="w-full h-full object-cover"/>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <Image  src = "/2.webp" alt = "Image of me" width={500} height={500} className="w-full h-full object-cover"/>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <Image  src = "/3.webp" alt = "Image of me" width={500} height={500} className="w-full h-full object-cover"/>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <Image  src = "/4.webp" alt = "Image of me" width={500} height={500} className="w-full h-full object-cover"/>
+                        </SwiperSlide>
                     </Swiper>
                 </div>
             </div>

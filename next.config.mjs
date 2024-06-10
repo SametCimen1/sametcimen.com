@@ -13,6 +13,10 @@ const nextConfig = {
           {
             protocol: 'https',
             hostname: 'skillicons.dev',
+          },
+          {
+            protocol: 'http',
+            hostname: 'localhost',
           }
         ],
       },
