@@ -46,7 +46,7 @@ export function Projects(){
                                             >
                                                 {/*https://skillicons.dev/icons?i=js*/}
                                                 {project.stacksUsed.map((item, index) => (
-                                                    <div key={index} style={{'backgroundImage': `url(https://skillicons.dev/icons?i=${item})`}} className='w-[32px] h-[32px] bg-cover  rounded-xl hover:-translate-y-6 '></div>
+                                                    <div key={index} style={{'backgroundImage': `url(https://skillicons.dev/icons?i=${item})`}} className='w-[32px] h-[32px] bg-cover  rounded-xl'></div>
                                                 ))}
 
                                             </CardItem>
