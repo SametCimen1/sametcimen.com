@@ -11,11 +11,13 @@ export function ToggleTheme(){
 
 
     const onSubmitHander = () =>{
-
         if(theme === 'dark'){
             setTheme('light')
         }
         if(theme === 'light'){
+            setTheme('dark')
+        }
+        if(theme === 'system'){
             setTheme('dark')
         }
 
@@ -24,10 +26,10 @@ export function ToggleTheme(){
 
     return(
         <div>
-            {theme === 'dark' ? 
-            (<MoonIcon size= {24} strokeWidth="2" className="cursor-pointer fill-[#1a5dc9]" color="#1a5dc9" onClick={onSubmitHander}/>) 
+            {theme === 'dark' ?
+            (<MoonIcon size= {24} strokeWidth="2" className="cursor-pointer fill-[#1a5dc9]" color="#1a5dc9" onClick={onSubmitHander}/>)
             :
-            (<SunIcon size= {24} strokeWidth="2" className="cursor-pointer" color="#c9c11a" onClick={onSubmitHander} />) 
+            (<SunIcon size= {24} strokeWidth="2" className="cursor-pointer" color="#c9c11a" onClick={onSubmitHander} />)
             }
         </div>
     )

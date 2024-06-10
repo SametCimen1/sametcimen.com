@@ -13,34 +13,17 @@ import { EffectCards } from 'swiper/modules';
 import { useTheme } from "next-themes";
 
 export function Hero(){
-    const [items, setItems] = useState([
-        {
-            id: 0,
-            url:'https://skillicons.dev/icons?i=react'
-        },
-        {
-            id: 1,
-            url:'https://skillicons.dev/icons?i=next'
-        },
-        {
-            id: 2,
-            url:'https://skillicons.dev/icons?i=nodejs'
-        },
-        {
-            id: 3,
-            url:'https://skillicons.dev/icons?i=html'
-        },
-        {
-            id: 4,
-            url:'https://skillicons.dev/icons?i=css'
-        }, {
-            id: 5,
-            url:'https://skillicons.dev/icons?i=js'
-        }
-    ]);
+    const [items, setItems] = useState([0,1,2,3,4,5,6]);
+    const urls = [
+        'https://skillicons.dev/icons?i=react',
+        'https://skillicons.dev/icons?i=next',
+        'https://skillicons.dev/icons?i=nodejs',
+        'https://skillicons.dev/icons?i=html',
+        'https://skillicons.dev/icons?i=css',
+        'https://skillicons.dev/icons?i=tailwindcss',
+        'https://skillicons.dev/icons?i=js'
+    ]
     const { setTheme, theme } = useTheme();
-    
-
 
 
     return(
@@ -57,17 +40,16 @@ export function Hero(){
                     <div className="w-full  mt-10 flex items-center">
                         <p className="font-medium text-lg">My Tech Stack </p>
                         <div className="flex display-inline ml-10">
-                            <Reorder.Group axis="x" values={items} onReorder={setItems} className="flex p-2 gap-2">
-                                {items.map((item) => (
-                                    <Reorder.Item key={item.id} value={item.id} style={{'backgroundImage': `url(${item.url})`}} 
-                                    className='w-[50px] h-[50px] bg-cover'>
+                            <Reorder.Group axis="x" values={items} onReorder={setItems} className="flex p-2 gap-2 group">
+                                {items.map((item, index) => (
+                                    <Reorder.Item key={item} value={item} className='w-[50px] h-[50px] bg-cover hover:-translate-y-6 '  style={{'backgroundImage': `url(${urls[index]})`}}>
                                     </Reorder.Item>
                                 ))}
                             </Reorder.Group>
                         </div>
                     </div>
                 </div>
-                <div className="flex-1 ">
+                <div className="flex ">
                     <Swiper
                         effect={'cards'}
                         grabCursor={true}
@@ -88,7 +70,7 @@ export function Hero(){
                     </Swiper>
                 </div>
             </div>
-           
+
         </div>
     )
 }

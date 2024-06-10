@@ -3,6 +3,7 @@ import {ToggleTheme} from '@/components/toggle-theme'
 import { Hero } from "@/components/hero";
 import { AboutMe } from "@/components/about-me";
 import { Projects } from "@/components/projects";
+import { Contact } from "@/components/contact";
 
 export default function Home() {
   return (
@@ -10,9 +11,7 @@ export default function Home() {
       <Hero />
       <AboutMe />
       <Projects />
-      <div className="h-screen bg-black">
-
-      </div>
+      <Contact />
     </main>
   );
 }

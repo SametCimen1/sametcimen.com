@@ -21,10 +21,10 @@ export function AboutMe(){
     if (!api) {
       return
     }
- 
+
     setCount(api.scrollSnapList().length)
     setCurrent(api.selectedScrollSnap() + 1)
- 
+
     api.on("select", () => {
       setCurrent(api.selectedScrollSnap() + 1)
     })
@@ -33,7 +33,7 @@ export function AboutMe(){
 
 
   return (
-    <div className='w-full  bg-slate-100 py-5'>
+    <div className='w-full  bg-slate-100 dark:bg-black py-5'>
       <div className='md:w-3/4 mx-auto'>
         <h2 className='font-semibold text-3xl text-[#2D2E32] md:mx-5 mx-auto'>About me section</h2>
       </div>
