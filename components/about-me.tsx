@@ -59,10 +59,15 @@ export function AboutMe(){
         </div>
         <div className="mx-auto lg:ml-20 flex flex-col">
           <h2 className="font-medium text-2xl text-[#2D2E32] duration-400 ">
-              In my free time I like to {current === 1 ? "code" : "draw"}
+              {current === 1 && "I attend Rutgers University"}
+              {current === 2 && "I have been awarded the Principle's award for Computer Science"}
+              {current === 3 && "I have attended Future Business Leaders of America's Coding and Programming event twice"}
+              {current === 4 && "I have been making websites and coding since I was 15 and in love with it"}
+              {current === 5 && "I like motorcycles"}
           </h2>
           <p className="mt-4">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere repudiandae illo voluptate velit incidunt esse, iure nisi reprehenderit ex blanditiis fuga. Harum eius provident deserunt in nihil itaque dicta. Maiores?</p>
+              {current === 1 && "I am attending the Rutgers University in New Jersey. My expected graduation year is 2027."}
+          </p>
         </div>
       </div>
     </div>

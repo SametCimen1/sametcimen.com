@@ -10,7 +10,7 @@ export function Projects(){
             <div className="grid lg:grid-cols-2  grid-cols-1 gap-4 ">
 
                     {projects.map((project,index) => (
-                        <a href={project.link} key={index} >
+                        <a href={project.link} key={index}>
                             <CardContainer className="inter-varflex col-span-2  w-full min-w-[25rem] ml-3 md:ml-3">
                                 <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1]ursor-pointer w-auto sm:w-[35rem] h-auto rounded-xl p-6 border cursor-pointer">
                                         <CardItem
@@ -46,10 +46,8 @@ export function Projects(){
                                                 className="px-4 py-2 text-xs font-normal dark:text-white flex gap-1"
                                             >
                                                 {/*https://skillicons.dev/icons?i=js*/}
-                                                {project.stacksUsed.map((item) => (
-                                                    <div  style={{'backgroundImage': `url(https://skillicons.dev/icons?i=${item})`}} className='w-[32px] h-[32px] bg-cover  rounded-xl hover:-translate-y-6 '>
-
-                                                    </div>
+                                                {project.stacksUsed.map((item, index) => (
+                                                    <div key={index} style={{'backgroundImage': `url(https://skillicons.dev/icons?i=${item})`}} className='w-[32px] h-[32px] bg-cover  rounded-xl hover:-translate-y-6 '></div>
                                                 ))}
 
                                             </CardItem>
