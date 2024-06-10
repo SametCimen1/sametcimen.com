@@ -5,8 +5,8 @@ import { projects } from '@/data'
 
 export function Projects(){
     return(
-        <div className="mx-auto  md:w-3/4  w-full my-10">
-            <h2 className=" font-semibold text-3xl text-[#2D2E32] dark:text-[#d1d1d1] md:mx-5 mx-auto">My projects</h2>
+        <div className="md:mx-auto  w-3/4 ml-2 my-10 overflow-hidden">
+            <h2 className=" font-semibold text-3xl text-[#2D2E32] dark:text-[#d1d1d1] md:mx-5 mx-auto w-3/4 md:w-full">My projects</h2>
             <div className="grid lg:grid-cols-2  grid-cols-1 gap-4 ">
                     {projects.map((project,index) => (
                         <CardContainer key={index} className="inter-varflex col-span-2  w-full min-w-[25rem]">
@@ -32,7 +32,7 @@ export function Projects(){
                                         src={project.imgSource}
                                         height="1000"
                                         width="1000"
-                                        className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
+                                        className="h-60 w-full object-cover rounded-md group-hover/card:shadow-xl"
                                         alt="thumbnail"
                                     />
                                     </CardItem>
@@ -58,7 +58,9 @@ export function Projects(){
                         </CardContainer>
                     ))}
             </div>
-            <a href = "https://github.com/sametcimen1" className="text-blue-700 hover:text-blue-500 underline md:mx-5 mx-auto">Check out my github</a>
+            <div className="md:mx-5 w-3/4 mx-auto mt-3">
+                <a href = "https://github.com/sametcimen1" className="text-blue-700 hover:text-blue-500 underline ">Check out my github</a>
+            </div>
         </div>
     )
 }

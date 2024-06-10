@@ -27,20 +27,19 @@ export function Hero(){
 
 
     return(
-        <div className="h-screen flex flex-col md:w-3/4 mx-auto justify-center items-start">
-            <div className="flex flex-col md:flex-row items-center p-4 w-full justify-between ">
-                <div className="max-w-50 flex-1 ">
-                    <h1 className="font-semibold text-5xl text-[#2D2E32] dark:text-[#efefef]">Samet Cimen</h1>
-                    <p className="text-muted-foreground mt-2">Hi, I ‘m Samet. A next.js and React developer based in New Jersey. 📍</p>
-                    <div className="mt-3 flex gap-4">
+        <div className="h-screen flex flex-col md:w-3/4 mx-auto justify-center items-start overflow-hidden md:overflow-auto">
+            <div className="flex lg:flex-row items-center p-4 w-full justify-between flex-col-reverse text-center lg:text-start">
+                <div className="max-w-50 flex-1 w-3/4 mx-auto ">
+                    <h1 className="font-semibold text-5xl text-[#2D2E32] dark:text-[#efefef] mt-10 lg:mt-0">Samet Cimen</h1>
+                    <p className="text-muted-foreground mt-2 mr-2">Hi, I ‘m Samet. A next.js and React developer based in New Jersey. 📍</p>
+                    <div className="mt-3 flex gap-4 justify-center lg:justify-start">
                         <Github size = {32} color={theme === 'dark' ? "#efefef" : "#2D2E32"} className="" strokeWidth="2"/>
                         <Instagram size = {32} color={theme === 'dark' ? "#efefef" : "#2D2E32"} strokeWidth="2"/>
                         <Linkedin size = {32} color={theme === 'dark' ? "#efefef" : "#2D2E32"} strokeWidth="2"/>
                     </div>
-                    <div className="w-full  mt-10 flex items-center">
-                        <p className="font-medium text-lg">My Tech Stack </p>
-                        <div className="flex display-inline ml-10">
-                            <Reorder.Group axis="x" values={items} onReorder={setItems} className="flex p-2 gap-2 group">
+                    <div className="w-full  mt-10 flex items-center flex-col lg:flex-row ">
+                        <div className="flex flex-wrap">
+                            <Reorder.Group axis="x" values={items} onReorder={setItems} className="flex p-2 gap-2 group flex-wrap justify-center md:justify-start">
                                 {items.map((item, index) => (
                                     <Reorder.Item key={item} value={item} className='w-[50px] h-[50px] bg-cover hover:-translate-y-6 '  style={{'backgroundImage': `url(${urls[index]})`}}>
                                     </Reorder.Item>
@@ -54,7 +53,7 @@ export function Hero(){
                         effect={'cards'}
                         grabCursor={true}
                         modules={[EffectCards]}
-                        className="mySwiper"
+                        className="mySwiper "
                     >
                         <SwiperSlide>
                             <Image className="h-full w-full object-cover " src = "/hero.png" alt="dsadsads" width={200} height={200}/>

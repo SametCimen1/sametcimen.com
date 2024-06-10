@@ -9,23 +9,23 @@ export const projects = [
         "link":"github.com"
     },
     {
-        "header":"Project1",
+        "header":"Linkne",
         "description": "description of project 1",
-        "imgSource": "https://buffer.com/library/content/images/size/w1200/2023/10/free-images.jpg",
+        "imgSource": "/linkne.png",
         "stacksUsed": "Next, react",
         "link":"github.com"
     },
     {
-        "header":"Project1",
+        "header":"JavaScript Discord Bot",
         "description": "description of project 1",
         "imgSource": "https://buffer.com/library/content/images/size/w1200/2023/10/free-images.jpg",
         "stacksUsed": ["Next, react"],
         "link":"github.com"
     },
     {
-        "header":"Project1",
+        "header":"Stav",
         "description": "description of project 1",
-        "imgSource": "https://buffer.com/library/content/images/size/w1200/2023/10/free-images.jpg",
+        "imgSource": "/stav.png",
         "stacksUsed": "Next, react",
         "link":"github.com"
     }
