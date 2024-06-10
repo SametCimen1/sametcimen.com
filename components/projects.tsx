@@ -5,14 +5,13 @@ import { projects } from '@/data'
 
 export function Projects(){
     return(
-        <div className="md:mx-auto  w-3/4 ml-2 my-10 max-w-[1300px]">
-            <h2 className=" font-semibold text-3xl text-[#2D2E32] dark:text-[#d1d1d1] md:mx-5 mx-auto w-3/4 md:w-full">My projects</h2>
-            <div className="grid lg:grid-cols-2  grid-cols-1 gap-4 ">
-
+        <div className="md:mx-auto  md:w-3/4  my-10 max-w-[1300px] w-11/12  mx-auto  overflow-hidden">
+            <h2 className=" font-semibold text-3xl text-[#2D2E32] dark:text-[#d1d1d1] md:mx-5 mx-auto w-3/4 md:w-full text-center md:text-left">My projects</h2>
+            <div className="grid xl:grid-cols-2  grid-cols-1 gap-4 w-full ">
                     {projects.map((project,index) => (
                         <a href={project.link} key={index}>
-                            <CardContainer className="inter-varflex col-span-2  w-full min-w-[25rem] ml-3 md:ml-3">
-                                <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1]ursor-pointer w-auto sm:w-[35rem] h-auto rounded-xl p-6 border cursor-pointer">
+                            <CardContainer className="inter-varflex col-span-2  w-full  md:min-w-[25rem]  mx-4 md:ml-3 md:mr-0">
+                                <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1]ursor-pointer w-auto w-full h-auto rounded-xl p-6 border cursor-pointer">
                                         <CardItem
                                             translateZ="20"
                                             className="text-xl font-bold text-neutral-600 dark:text-white"
