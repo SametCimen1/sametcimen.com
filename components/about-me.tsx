@@ -33,11 +33,11 @@ export function AboutMe(){
 
 
   return (
-    <div className='w-full  bg-slate-100 dark:bg-black py-5 overflow-hidden'>
-      <div className=' mx-auto w-3/4'>
+    <div className='w-full  bg-slate-100 dark:bg-black py-5 overflow-hidden mx-auto flex flex-col' id = "about">
+      <div className=' mx-auto w-3/4 max-w-[1300px]'>
         <h2 className='font-semibold text-3xl text-[#2D2E32] md:mx-5'>About me</h2>
       </div>
-      <div className="flex flex-col lg:flex-row w-3/4 mx-auto justify-between ">
+      <div className="flex flex-col lg:flex-row w-3/4 mx-auto justify-between max-w-[1300px] ">
         <div className="relative">
           <Carousel className="" setApi={setApi}>
             <CarouselContent>

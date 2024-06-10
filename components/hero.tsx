@@ -21,12 +21,12 @@ export function Hero(){
         'https://skillicons.dev/icons?i=html',
         'https://skillicons.dev/icons?i=css',
         'https://skillicons.dev/icons?i=tailwindcss',
-        'https://skillicons.dev/icons?i=js'
+        'https://skillicons.dev/icons?i=ts'
     ]
     const { setTheme, theme } = useTheme();
 
     return(
-        <div className="h-screen flex flex-col md:w-3/4 mx-auto justify-center items-start overflow-hidden md:overflow-visible">
+        <div className="h-screen flex flex-col md:w-3/4 mx-auto justify-center items-start overflow-hidden md:overflow-visible  max-w-[1300px]">
             <div className="flex lg:flex-row items-center p-4 w-full justify-between flex-col-reverse text-center lg:text-start">
                 <div className="max-w-50 flex-1 w-3/4 mx-auto ">
                     <h1 className="font-semibold text-5xl text-[#2D2E32] dark:text-[#efefef] mt-10 lg:mt-0">Samet Cimen</h1>
@@ -53,13 +53,6 @@ export function Hero(){
                         modules={[EffectCards]}
                         className="mySwiper "
                     >
-                        <SwiperSlide>
-                            <Image className="h-full w-full object-cover " src = "/hero.png" alt="dsadsads" width={200} height={200}/>
-                        </SwiperSlide>
-                        <SwiperSlide></SwiperSlide>
-                        <SwiperSlide></SwiperSlide>
-                        <SwiperSlide></SwiperSlide>
-                        <SwiperSlide></SwiperSlide>
                         <SwiperSlide></SwiperSlide>
                         <SwiperSlide></SwiperSlide>
                         <SwiperSlide></SwiperSlide>

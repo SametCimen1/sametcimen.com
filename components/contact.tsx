@@ -35,7 +35,7 @@ export function Contact(){
       }, []);
 
     return (
-        <div className="mx-auto  w-3/4  my-10 py-5 ">
+        <div className="mx-auto  w-3/4  my-10 py-5 max-w-[1300px]"  id = "contact">
             <div className="md:mx-5 mx-auto">
                 <h2 className="font-semibold text-3xl text-[#2D2E32] dark:text-[#d1d1d1] ">
                     Contact Me
