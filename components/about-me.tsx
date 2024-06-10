@@ -35,28 +35,34 @@ export function AboutMe(){
   return (
     <div className='w-full  bg-slate-100 dark:bg-black py-5 overflow-hidden'>
       <div className=' mx-auto w-3/4'>
-        <h2 className='font-semibold text-3xl text-[#2D2E32] md:mx-5'>About me section</h2>
+        <h2 className='font-semibold text-3xl text-[#2D2E32] md:mx-5'>About me</h2>
       </div>
-      <div className="flex flex-col md:flex-row w-3/4 mx-autojustify-between mx-auto bg-blue-400">
-        <Carousel className="" setApi={setApi}>
-          <CarouselContent>
-            {Array.from({ length: 5 }).map((_, index) => (
-              <CarouselItem key={index}>
-                <div className="p-1">
-                  <Card>
-                    <CardContent className="flex aspect-square items-center justify-center p-6">
-                      <span className="text-4xl font-semibold">{index + 1}</span>
-                    </CardContent>
-                  </Card>
-                </div>
-              </CarouselItem>
-            ))}
-          </CarouselContent>
-          <CarouselPrevious />
-          <CarouselNext />
-        </Carousel>
-        <div className="flex-1 ml-4">
-          <h2 className="font-medium text-2xl text-[#2D2E32]"><span className="text-primary">{current === 1 ? "code" : "draw"}</span></h2>
+      <div className="flex flex-col lg:flex-row w-3/4 mx-auto justify-between ">
+        <div className="relative">
+          <Carousel className="" setApi={setApi}>
+            <CarouselContent>
+              {Array.from({ length: 5 }).map((_, index) => (
+                <CarouselItem key={index}>
+                  <div className="p-1">
+                    <Card>
+                      <CardContent className="flex aspect-square items-center justify-center p-6">
+                        <span className="text-4xl font-semibold">{index + 1}</span>
+                      </CardContent>
+                    </Card>
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious />
+            <CarouselNext />
+          </Carousel>
+        </div>
+        <div className="mx-auto lg:ml-20 flex flex-col">
+          <h2 className="font-medium text-2xl text-[#2D2E32] duration-400 ">
+              In my free time I like to {current === 1 ? "code" : "draw"}
+          </h2>
+          <p className="mt-4">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere repudiandae illo voluptate velit incidunt esse, iure nisi reprehenderit ex blanditiis fuga. Harum eius provident deserunt in nihil itaque dicta. Maiores?</p>
         </div>
       </div>
     </div>
