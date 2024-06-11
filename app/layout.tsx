@@ -19,7 +19,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-
+      <head>
+        <title>Samet Cimen</title>
+      </head>
       <body className={cn('', inter.className)}>
       <ThemeProvider
               attribute="class"
