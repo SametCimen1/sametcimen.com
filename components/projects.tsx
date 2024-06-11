@@ -21,7 +21,7 @@ export function Projects(){
                                         <CardItem
                                             as="p"
                                             translateZ="5"
-                                            className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300"
+                                            className="text-neutral-500 text-sm max-w-full mt-2 dark:text-neutral-300"
                                         >
                                         {project.description}
                                         </CardItem>

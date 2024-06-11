@@ -24,7 +24,7 @@ export const projects = [
     },
     {
         "header":"Stav",
-        "description": "A React admin dashboard project with shadcn library",
+        "description": "Developed a React admin dashboard project using TailwindCSS for styling, React for the front-end framework, and deployed it with Vercel for seamless hosting and continuous deployment.",
         "imgSource": "/stav.png",
         "stacksUsed": ["react", "tailwindcss"],
         "link":"https://stav.vercel.app/"

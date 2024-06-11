@@ -42,7 +42,7 @@ export function Contact(){
                 </h2>
 
                 <div className="mt-5  flex items-center">
-                    <div className="p-1 bg-slate-200 rounded-lg ">
+                    <div className="p-1 light:bg-slate-200 rounded-lg ">
                         <Mail  size={32}/>
                     </div>
                     <p className="ml-5">You can mail me at <a className="" href="mailto:cimensamet338@gmail.com">cimensamet338@gmail.com</a></p>

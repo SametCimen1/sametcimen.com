@@ -58,7 +58,7 @@ export function AboutMe(){
   return (
     <div className=' bg-zinc-100 dark:bg-black py-5 overflow-hidden mx-auto flex flex-col' id = "about">
       <div className=' mx-auto w-3/4 max-w-[1300px]'>
-        <h2 className='font-semibold text-3xl text-[#2D2E32] md:mx-5'>About me</h2>
+        <h2 className='font-semibold text-3xl text-[#2D2E32] dark:text-[#d1d1d1] md:mx-5'>About me</h2>
       </div>
       <div className="flex flex-col lg:flex-row mx-auto justify-between max-w-[1300px] w-3/4 ">
         <div className="relative">
@@ -83,7 +83,7 @@ export function AboutMe(){
           </Carousel>
         </div>
         <div className="mx-auto lg:ml-20 mt-4 lg:mt-0 flex flex-col">
-          <h2 className="font-medium text-2xl text-[#2D2E32] duration-400 ">
+          <h2 className="font-medium text-2xl text-[#2D2E32] dark:text-[#d1d1d1] duration-400 ">
               {current === 1 && "I Study at Rutgers University"}
               {current === 2 && "My Passion for Web Development and Coding"}
               {current === 3 && "I Love Next.js and React"}
