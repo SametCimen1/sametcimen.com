@@ -26,7 +26,7 @@ export function Hero(){
     const { setTheme, theme } = useTheme();
 
     return(
-        <div className="h-screen flex flex-col md:w-3/4 mx-auto justify-center items-start overflow-hidden md:overflow-visible  max-w-[1300px] mt-20 lg:mt-0">
+        <div className="min-h-screen flex flex-col md:w-3/4 mx-auto justify-center items-start  md:overflow-visible  max-w-[1300px] mt-20 lg:mt-0">
             <div className="flex lg:flex-row items-center p-4 w-full justify-between flex-col-reverse text-center lg:text-start">
                 <div className="max-w-50 flex-1 w-3/4 mx-auto ">
                     <h1 className="font-semibold text-5xl text-[#2D2E32] dark:text-[#efefef] mt-10 lg:mt-0">Samet Cimen</h1>
