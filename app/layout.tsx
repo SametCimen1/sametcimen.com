@@ -4,6 +4,8 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider"
 import { Nav } from "@/components/nav";
 import { cn } from "@/lib/utils";
+import Head from 'next/head'
+import Script from 'next/script'
 
 const inter = Poppins({ subsets: ["latin"], weight:['200', '800', '500', '400']});
 
@@ -19,9 +21,25 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
+      <Head>
         <title>Samet Cimen</title>
-      </head>
+
+            <Script
+            strategy='lazyOnload'
+            src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_MEASUREMENT_ID}`}
+          />
+
+          <Script id='' strategy='lazyOnload'>
+            {`
+                  window.dataLayer = window.dataLayer || [];
+                  function gtag(){dataLayer.push(arguments);}
+                  gtag('js', new Date());
+                  gtag('config', '${process.env.NEXT_PUBLIC_MEASUREMENT_ID}', {
+                  page_path: window.location.pathname,
+                  });
+              `}
+          </Script>
+      </Head>
       <body className={cn('', inter.className)}>
       <ThemeProvider
               attribute="class"
