@@ -5,8 +5,10 @@ import Image from "next/image"
 import { Github, Instagram, Linkedin  } from 'lucide-react';
 import React, { useRef, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/effect-cards';;
+import 'swiper/css/autoplay'
 import { Reorder } from "framer-motion"
 import { EffectCards } from 'swiper/modules';
 
@@ -50,8 +52,9 @@ export function Hero(){
                     <Swiper
                         effect={'cards'}
                         grabCursor={true}
-                        modules={[EffectCards]}
+                        modules={[EffectCards, Autoplay]}
                         className="mySwiper "
+                        autoplay={{ delay: 1000 }}
                     >
                         <SwiperSlide>
                             <Image  src = "/hero.webp" alt = "Image of me" width={500} height={500} className="w-full h-full object-cover"/>
