@@ -5,29 +5,28 @@ import { projects } from '@/data'
 import { Button } from "./ui/button";
 import { Separator } from "@/components/ui/separator"
 import { useState } from "react";
-
-
 export function Projects(){
 
-    const [category, setCategory] = useState("");
+    const [category, setCategory] = useState("all");
 
     return(
         <div className="md:mx-auto  md:w-3/4  my-10 max-w-[1300px] w-11/12  mx-auto  overflow-hidden">
             <h2 className=" font-semibold text-3xl text-[#2D2E32] dark:text-[#d1d1d1] md:mx-5 mx-auto w-3/4 md:w-full text-center md:text-left">My projects</h2>
 
             <div className="flex h-5 items-center space-x-4 text-sm my-2 md:mx-5 mx-auto w-3/4 md:w-full text-center md:text-left">
-                <div className={`cursor-pointer ${category === 'blog' && "text-blue-500"} hover:text-blue-500`} onClick={() => setCategory('blog')}>Blog</div>
+                <div className={`cursor-pointer ${category === 'all' && "text-blue-500"} hover:text-blue-500`} onClick={() => setCategory('all')}>All</div>
                 <Separator orientation="vertical" />
-                <div className={`cursor-pointer ${category === 'docs' && "text-blue-500"} hover:text-blue-500`} onClick={() => setCategory('docs')}>Docs</div>
+                <div className={`cursor-pointer ${category === 'web' && "text-blue-500"} hover:text-blue-500`} onClick={() => setCategory('web')}>Web</div>
+                <Separator orientation="vertical" />
+                <div className={`cursor-pointer ${category === 'ml' && "text-blue-500"} hover:text-blue-500`} onClick={() => setCategory('ml')}>Machine Learning</div>
             </div>
             <div className="grid xl:grid-cols-2  grid-cols-1 gap-4 w-full ">
-
-                    {projects.map((project,index) => {
+            {projects.map((project,index) => {
                         
-                        if(category !== ''&& project.category === category ){
+                        if((category !== '' && project.category === category)|| category === "all"){
                             return(
-                                <a href={project.link} target="_blank" key={index}>
-                                    <CardContainer className="inter-varflex col-span-2  w-full  md:min-w-[25rem]  mx-4 md:ml-3 md:mr-0">
+                                <a href={project.link} target="_blank" key={index} className="nex">
+                                    <CardContainer className="inter-varflex col-span-2  w-full  md:min-w-[25rem]  mx-4 md:ml-3 md:mr-0 ">
                                         <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1]ursor-pointer w-auto w-full h-auto rounded-xl p-6 border cursor-pointer">
                                                 <CardItem
                                                     translateZ="20"

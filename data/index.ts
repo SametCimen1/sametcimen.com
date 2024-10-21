@@ -2,12 +2,20 @@
 
 export const projects = [
     {
+        "header":"Next-Image",
+        "description": "A web app that uses OpenAI API and features a 3D face component that communicates with users through text input and Speech API. Built using Next.js and React.",
+        "imgSource": "/next-image.png",
+        "stacksUsed": ["next", "react", "tailwindcss", 'js', 'vercel'],
+        "link":"https://next-image-pied.vercel.app",
+        "category":'ml'
+    },
+    {
         "header":"Karina",
         "description": "A web app that uses OpenAI API and features a 3D face component that communicates with users through text input and Speech API. Built using Next.js and React.",
         "imgSource": "/image1.png",
         "stacksUsed": ["next", "react", "tailwindcss", 'js', 'vercel'],
         "link":"https://karina-five.vercel.app",
-        "category":'blog'
+        "category":'web'
     },
     {
         "header":"Next-Store",
@@ -15,7 +23,7 @@ export const projects = [
         "imgSource": "/image2.png",
         "stacksUsed": ["next", "react", "tailwindcss", "postgres", 'ts'],
         "link":"https://next-store-karin.vercel.app",
-        "category":'blog'
+        "category":'web'
     },
     {
         "header":"Alan",
@@ -23,7 +31,7 @@ export const projects = [
         "imgSource": "/alan.png",
         "stacksUsed": ['electron', 'js', 'react'],
         "link":"https://github.com/SametCimen1/alan",
-        "category":'docs'
+        "category":'web'
     },
     {
         "header":"Stav",
