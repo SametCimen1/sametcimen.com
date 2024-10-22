@@ -18,6 +18,8 @@ export function Projects(){
                 <Separator orientation="vertical" />
                 <div className={`cursor-pointer ${category === 'web' && "text-blue-500"} hover:text-blue-500`} onClick={() => setCategory('web')}>Web</div>
                 <Separator orientation="vertical" />
+                <div className={`cursor-pointer ${category === 'c' && "text-blue-500"} hover:text-blue-500`} onClick={() => setCategory('c')}>C</div>
+                <Separator orientation="vertical" />
                 <div className={`cursor-pointer ${category === 'ml' && "text-blue-500"} hover:text-blue-500`} onClick={() => setCategory('ml')}>Machine Learning</div>
             </div>
             <div className="grid xl:grid-cols-2  grid-cols-1 gap-4 w-full ">

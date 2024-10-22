@@ -7,15 +7,23 @@ export const projects = [
         "imgSource": "/next-image.png",
         "stacksUsed": ["next", "react", "tailwindcss", 'js', 'vercel'],
         "link":"https://next-image-pied.vercel.app",
+        "category":'web'
+    },
+    {
+        "header":"Classification-ML",
+        "description": "A full-stack web application, written in TypeScript and Next.js framework. Includes Product listing, reviews, admin dashboard, and sign up with GitHub",
+        "imgSource": "/classml.png",
+        "stacksUsed": ['python', 'tensorflow'],
+        "link":"https://github.com/sametcimen1/ClassML",
         "category":'ml'
     },
     {
-        "header":"Karina",
-        "description": "A web app that uses OpenAI API and features a 3D face component that communicates with users through text input and Speech API. Built using Next.js and React.",
-        "imgSource": "/image1.png",
-        "stacksUsed": ["next", "react", "tailwindcss", 'js', 'vercel'],
-        "link":"https://karina-five.vercel.app",
-        "category":'web'
+        "header":"C-Shell",
+        "description": "A full-stack web application, written in TypeScript and Next.js framework. Includes Product listing, reviews, admin dashboard, and sign up with GitHub",
+        "imgSource": "/cshell.png",
+        "stacksUsed": ['c'],
+        "link":"https://github.com/sametcimen1/CShell",
+        "category":'c'
     },
     {
         "header":"Next-Store",
@@ -26,19 +34,19 @@ export const projects = [
         "category":'web'
     },
     {
-        "header":"Alan",
-        "description": "A cross-platform desktop app for the Future Business Leaders of America Coding and Programming competition. Placed 2nd in New Jersey, and Top 15 in the United States",
-        "imgSource": "/alan.png",
-        "stacksUsed": ['electron', 'js', 'react'],
-        "link":"https://github.com/SametCimen1/alan",
+        "header":"Karina",
+        "description": "A web app that uses OpenAI API and features a 3D face component that communicates with users through text input and Speech API. Built using Next.js and React.",
+        "imgSource": "/image1.png",
+        "stacksUsed": ["next", "react", "tailwindcss", 'ts', 'vercel'],
+        "link":"https://karina-five.vercel.app",
         "category":'web'
     },
     {
-        "header":"Stav",
-        "description": "Developed a React admin dashboard project using TailwindCSS for styling, React for the front-end framework, and deployed it with Vercel for seamless hosting and continuous deployment.",
-        "imgSource": "/stav.png",
-        "stacksUsed": ["react", "tailwindcss"],
-        "link":"https://stav.vercel.app/",
-        "category":'docs'
+        "header":"Snake3d",
+        "description": "A web app that uses OpenAI API and features a 3D face component that communicates with users through text input and Speech API. Built using Next.js and React.",
+        "imgSource": "/snake.png",
+        "stacksUsed": ['js', 'vercel'],
+        "link":"https://karina-five.vercel.app",
+        "category":'web'
     }
 ]
