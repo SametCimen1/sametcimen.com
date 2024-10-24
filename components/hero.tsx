@@ -32,7 +32,7 @@ export function Hero(){
             <div className="flex lg:flex-row items-center p-4 w-full justify-between flex-col-reverse text-center lg:text-start">
                 <div className="max-w-50 flex-1 w-3/4 mx-auto ">
                     <h1 className="font-semibold text-5xl text-[#2D2E32] dark:text-[#efefef] mt-10 lg:mt-0">Samet Cimen</h1>
-                    <p className="text-muted-foreground mt-2 mr-2">Hi, I ‘m Samet. A Next.js and React developer based in New Jersey.📍</p>
+                    <p className="text-muted-foreground mt-2 mr-2">Hi, I ‘m Samet. A Next.js and React developer from New Jersey.📍</p>
                     <div className="mt-3 flex gap-4 justify-center lg:justify-start">
                         <a href = "https://github.com/sametcimen1" target="_blank"><Github size = {32} color={theme === 'dark' ? "#efefef" : "#2D2E32"} className="cursor-pointer hover:scale-125 duration-300" strokeWidth="2"/></a>
                         <a href = "https://instagram.com/sametcimenn_" target="_blank"><Instagram size = {32} color={theme === 'dark' ? "#efefef" : "#2D2E32"} className="cursor-pointer hover:scale-125 duration-300" strokeWidth="2"/></a>

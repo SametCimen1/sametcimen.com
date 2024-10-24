@@ -64,7 +64,7 @@ export function Contact(){
                         onClick={handleCopy}
                         variant={'outline'}
                     >
-                        {copied ? "Email is Copied!" : "Or copy my email address"}
+                        {copied ? "Email Copied!" : "Or copy my email address"}
                     </Button>
                     </div>
             </div>
