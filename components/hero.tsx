@@ -16,6 +16,7 @@ import { useTheme } from "next-themes";
 
 export function Hero(){
     const [items, setItems] = useState([0,1,2,3,4,5,6]);
+
     const urls = [
         'https://skillicons.dev/icons?i=react',
         'https://skillicons.dev/icons?i=next',
@@ -25,6 +26,7 @@ export function Hero(){
         'https://skillicons.dev/icons?i=tailwindcss',
         'https://skillicons.dev/icons?i=ts'
     ]
+
     const { setTheme, theme } = useTheme();
 
     return(

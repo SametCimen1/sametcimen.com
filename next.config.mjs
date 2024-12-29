@@ -21,9 +21,18 @@ const nextConfig = {
           {
             protocol: 'https',
             hostname: 'sametcimen.com',
+          },
+          {
+            protocol: 'https',
+            hostname: 'images.pexels.com',
+          },
+          {
+            protocol: 'https',
+            hostname: 'i1.sndcdn.com',
           }
         ],
       },
 };
+
 
 export default nextConfig;

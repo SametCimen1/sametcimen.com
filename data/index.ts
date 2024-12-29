@@ -5,7 +5,7 @@ export const projects = [
         "header":"Next-Image",
         "description": "Next-Image is a web application that allows users to edit images, create new ones with OpenAI's DALL·E 2, and download their projects, all through a user-friendly interface.",
         "imgSource": "/next-image.png",
-        "stacksUsed": ["next", "react", "tailwindcss", 'js', 'vercel'],
+        "stacksUsed": ["next", "react", "tailwindcss", 'ts', 'vercel'],
         "link":"https://next-image-pied.vercel.app",
         "category":'web'
     },
