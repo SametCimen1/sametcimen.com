@@ -33,14 +33,7 @@ export const projects = [
         "link":"https://next-store-karin.vercel.app",
         "category":'web'
     },
-    {
-        "header":"Karina",
-        "description": "A web app that uses OpenAI API and features a 3D face component that communicates with users through text input and Speech API. Built using Next.js and React.",
-        "imgSource": "/image1.png",
-        "stacksUsed": ["next", "react", "tailwindcss", 'ts', 'vercel'],
-        "link":"https://karina-five.vercel.app",
-        "category":'web'
-    },
+
     {
         "header":"Snake3d",
         "description": "The 3D Snake web app, built with JavaScript and Three.js, lets players navigate a three-dimensional environment in a classic snake game format.",

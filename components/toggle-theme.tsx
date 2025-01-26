@@ -12,13 +12,13 @@ export function ToggleTheme(){
 
     const onSubmitHander = () =>{
         if(theme === 'dark'){
-            setTheme('light')
+            setTheme('dark')
         }
         if(theme === 'light'){
-            setTheme('dark')
+            setTheme('light')
         }
         if(theme === 'system'){
-            setTheme('dark')
+            setTheme('light')
         }
 
     console.log(`current theme ${theme}`)

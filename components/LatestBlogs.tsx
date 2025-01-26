@@ -5,16 +5,10 @@ const LatestBlogs = () => {
   
     const blogs = [
         {
-            id:2,
-            title:"Creating your own programming language",
-            description: "How to hack a windows laptop using msfvenom and trojan, How to hack a windows laptop using msfvenom and trojan, How to hack a windows laptop using msfvenom and trojan, How to hack a windows laptop using msfvenom and trojan ,How to hack a windows laptop using msfvenom and trojan ",
-            image:"https://images.pexels.com/photos/819806/pexels-photo-819806.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-        },
-        {
             id:1,
-            title:"Trojan hacking",
+            title:"Creating a Malware",
             description: "How to hack a windows laptop using msfvenom and trojan, How to hack a windows laptop using msfvenom and trojan, How to hack a windows laptop using msfvenom and trojan, How to hack a windows laptop using msfvenom and trojan ,How to hack a windows laptop using msfvenom and trojan ",
-            image:"https://images.pexels.com/photos/819806/pexels-photo-819806.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            image:"/freakybob.png"
         },
     
 
