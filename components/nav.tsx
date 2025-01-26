@@ -26,11 +26,7 @@ export function Nav(){
                         Contact
                     </a>
                 </li>
-                <li className="cursor-pointer font-medium">
-                    <a href="/blog">
-                        Blog
-                    </a>
-                </li>
+
                 <li><ToggleTheme /></li>
             </ul>
         </nav>
